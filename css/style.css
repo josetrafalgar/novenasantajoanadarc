@@ -67,6 +67,9 @@ body{
   position: relative;
 
   background-image: url('/img/img1.jpg');
+
+  width: auto;
+  height: max-content
 }
 
 button{
@@ -114,7 +117,7 @@ img{
   height: 100%;
   display: grid;
   align-items: flex-end;
-  overflow: hidden;
+  overflow: auto;
   transition: all .3s;
   z-index: var(--z-modal);
   visibility: hidden;
@@ -166,7 +169,14 @@ img{
   color: var(--title-color);
   font-weight: 500;
 }
-
+.subtitle {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 1.5rem;
+}
+span {
+  font-weight: bold;
+}
 .modal__description{
   margin-bottom: 1.5rem;
 }
